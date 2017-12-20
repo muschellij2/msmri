@@ -1,0 +1,22 @@
+Package: msdata
+Version: 0.1.0
+Title: Open Multiple Sclerosis Magnetic Resonance Imaging Data
+Description: Structural magnetic resonance imaging ('MRI') of patients with multiple sclerosis ('MS').  Cross-sectional and longitudinal imaging data are available. 
+Authors@R: structure(list(structure(list(given = "John", family = "Muschelli", 
+        role = c("aut", "cre"), email = "muschellij2@gmail.com", 
+        comment = NULL), .Names = c("given", "family", "role", "email", 
+    "comment"))), class = "person")
+License: GPL-3
+Suggests: 
+    knitr,
+    rmarkdown,
+    covr,
+    testthat
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Type: Package
+Maintainer: John Muschelli <muschellij2@gmail.com>
+VignetteBuilder: knitr
+URL: https://github.com/muschellij2/msdata
+BugReports: https://github.com/muschellij2/msdata/issues
