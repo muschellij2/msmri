@@ -1,0 +1,18 @@
+language: R
+sudo: false
+cache: packages
+after_success: if [ "$TRAVIS_OS_NAME" == "linux" ]; then Rscript -e 'covr::coveralls(type
+  = "all")'; fi
+warnings_are_errors: true
+before_deploy: if [ "$TRAVIS_OS_NAME" == "osx" ]; then rm -f *.tar.gz; fi
+r_check_args: "--as-cran --install-args=--build"
+deploy:
+  provider: releases
+  skip_cleanup: yes
+  file_glob: yes
+  file: msdata*.t*gz
+  api_key:
+    secure: P7BDC8bj9YrDSyNmhiNUrAQpCrB3FnFJaOa8C761lTned9zemzLsNvobQxXMXLvY3J9/2P/qvePC6Yc6n1aLLrGn3wYPD7cmzzJvvdK3c7YzkFAif8PINQ64opY9NXhJw1dW4Q10rI2pAmYmyvhoyldtNwHY8mjZQ4Gq6tHZ/JbrPjgaKNIUuIUPtcMHX+cSMsrO57iEePSvR7v6LAdOHrYtEOrMK8XHk8eRxACzra4vFMO9IS+NQlh0pg4mwl5shhIZd2rvY0GCxYKwKd2n/PCnTbzDbfknFT8x64FqUBV4A82+kDuT/i+N+YCD+ku4js7h/CHGoTlG05BKr3nwtNAsh/4LZsbCgNN5FXt2qK4HVSWP6HbwUQsEaOxF+Cs7j+QUennk6K+MNtpefRsineR8UOd3GoPyNBfOijgwDgay2Yaa4N89sbrEcl0GVCuDGztAFa5MLbGEWEIxzJuLCRLE3V/vQj9GD/dkZfgbrbUUHBFS8sblkAT5HgKj+618iESkfWu7qCIDtS12MzsoYFJhPxIE+MLyVdJEjd2lqF9UmSMo0wp6hB1J+hC0BGqdNT/ui9ZJctpRcVkfkGrFkajRmch1HBrLPbZcmMMe+fzXtLM88rJ4wDS/nTkW3CHqDxEgz92zkMAiIy+ks0L81k8Y3pneOH0/hkeZujYVkXE=
+  on:
+    tags: yes
+    repo: muschellij2/msdata
