@@ -1,0 +1,179 @@
+structure(
+  list(
+    lesjak2017novel = structure(
+      list(
+        title = "A novel public MR image dataset of multiple sclerosis patients with lesion segmentations based on multi-rater consensus",
+        author = structure(
+          list(
+            structure(
+              list(
+                given = "\vZiga",
+                family = "Lesjak",
+                role = NULL,
+                email = NULL,
+                comment = NULL
+              ),
+              .Names = c("given",
+                         "family", "role", "email", "comment")
+            ),
+            structure(
+              list(
+                given = "Alfiia",
+                family = "Galimzianova",
+                role = NULL,
+                email = NULL,
+                comment = NULL
+              ),
+              .Names = c("given",
+                         "family", "role", "email", "comment")
+            ),
+            structure(
+              list(
+                given = "Ale\vs",
+                family = "Koren",
+                role = NULL,
+                email = NULL,
+                comment = NULL
+              ),
+              .Names = c("given",
+                         "family", "role", "email", "comment")
+            ),
+            structure(
+              list(
+                given = "Matej",
+                family = "Lukin",
+                role = NULL,
+                email = NULL,
+                comment = NULL
+              ),
+              .Names = c("given",
+                         "family", "role", "email", "comment")
+            ),
+            structure(
+              list(
+                given = "Franjo",
+                family = "Pernu\v{s}",
+                role = NULL,
+                email = NULL,
+                comment = NULL
+              ),
+              .Names = c("given",
+                         "family", "role", "email", "comment")
+            ),
+            structure(
+              list(
+                given = "Bo\vstjan",
+                family = "Likar",
+                role = NULL,
+                email = NULL,
+                comment = NULL
+              ),
+              .Names = c("given",
+                         "family", "role", "email", "comment")
+            ),
+            structure(
+              list(
+                given = "\vZiga",
+                family = "\vSpiclin",
+                role = NULL,
+                email = NULL,
+                comment = NULL
+              ),
+              .Names = c("given",
+                         "family", "role", "email", "comment")
+            )
+          ),
+          class = "person"
+        ),
+        journal = "Neuroinformatics",
+        pages = "1--13",
+        year = "2017",
+        publisher = "Springer"
+      ),
+      .Names = c("title", "author", "journal",
+                 "pages", "year", "publisher"),
+      bibtype = "Article",
+      key = "lesjak2017novel"
+    )
+  ),
+  class = "bibentry",
+  strings = structure(character(0), .Names = character(0)),
+  .Names = "lesjak2017novel"
+)
+
+structure(
+  list(
+    lesjak2016validation = structure(
+      list(
+        title = "Validation of White-Matter Lesion Change Detection Methods on a Novel Publicly Available MRI Image Database",
+        author = structure(list(
+          structure(
+            list(
+              given = "\vZiga",
+              family = "Lesjak",
+              role = NULL,
+              email = NULL,
+              comment = NULL
+            ),
+            .Names = c("given",
+                       "family", "role", "email", "comment")
+          ),
+          structure(
+            list(
+              given = "Franjo",
+              family = "Pernu\v{s}",
+              role = NULL,
+              email = NULL,
+              comment = NULL
+            ),
+            .Names = c("given",
+                       "family", "role", "email", "comment")
+          ),
+          structure(
+            list(
+              given = "Bo\vstjan",
+              family = "Likar",
+              role = NULL,
+              email = NULL,
+              comment = NULL
+            ),
+            .Names = c("given",
+                       "family", "role", "email", "comment")
+          ),
+          structure(
+            list(
+              given = "\vZiga",
+              family = "\vSpiclin",
+              role = NULL,
+              email = NULL,
+              comment = NULL
+            ),
+            .Names = c("given",
+                       "family", "role", "email", "comment")
+          )
+        ), class = "person"),
+        journal = "Neuroinformatics",
+        volume = "14",
+        number = "4",
+        pages = "403--420",
+        year = "2016",
+        publisher = "Springer"
+      ),
+      .Names = c(
+        "title",
+        "author",
+        "journal",
+        "volume",
+        "number",
+        "pages",
+        "year",
+        "publisher"
+      ),
+      bibtype = "Article",
+      key = "lesjak2016validation"
+    )
+  ),
+  class = "bibentry",
+  strings = structure(character(0), .Names = character(0)),
+  .Names = "lesjak2016validation"
+)
