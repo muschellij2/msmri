@@ -26,7 +26,11 @@ download_ms_patient = function(
 
   dat = ms_data(cohort = cohort,
                 data = data)
-  dat = dat[ dat$id %in% id, ]
+  have_data = dat$id %in% id
+  if (!any(have_data)) {
+    stop("That ID is not in the cohort/data you requested")
+  }
+  dat = dat[ have_data, ]
   urls = c(dat$url, dat$Brain_Mask, dat$Gold_Standard)
   if (!dir.exists(outdir)) {
     dir.create(outdir, showWarnings = FALSE, recursive = TRUE)
