@@ -30,7 +30,7 @@ ms_data = function(
   rda = paste0(cohort, "_", data)
   df = get(rda)
   df$url = file.path(ms_data_url(), df$file)
-  if (data == "long") {
+  if (data == "longitudinal") {
     df$Gold_Standard = file.path(ms_data_url(), df$Gold_Standard)
     if (data == "coregistered") {
       df$Brain_Mask = file.path(ms_data_url(), df$Brain_Mask)
