@@ -5,4 +5,11 @@ test_that("Downloader ", {
       cohort = "cross_sectional",
       data = "raw")
   )
+
+  expect_error(
+    download_ms_patient(
+      id = 20,
+      cohort = "cross_sectional",
+      data = "raw")
+  )
 })

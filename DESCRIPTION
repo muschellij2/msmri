@@ -1,5 +1,5 @@
 Package: msdata
-Version: 0.1.0
+Version: 0.1.1
 Title: Open Multiple Sclerosis Magnetic Resonance Imaging Data
 Description: Structural magnetic resonance imaging ('MRI') of patients with multiple sclerosis ('MS').  Cross-sectional and longitudinal imaging data are available. 
 Authors@R: c(person(given = "John", family = "Muschelli", 
@@ -14,7 +14,8 @@ Suggests:
     knitr,
     rmarkdown,
     covr,
-    testthat
+    testthat,
+    oro.nifti
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true

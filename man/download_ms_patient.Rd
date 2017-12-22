@@ -2,10 +2,14 @@
 % Please edit documentation in R/download_ms_data.R
 \name{download_ms_patient}
 \alias{download_ms_patient}
+\alias{ms_patient_urls}
 \title{Download MS Imaging Data}
 \usage{
 download_ms_patient(id, cohort = c("cross_sectional", "longitudinal"),
   data = c("raw", "coregistered"), outdir = tempfile(), overwrite = FALSE)
+
+ms_patient_urls(id, cohort = c("cross_sectional", "longitudinal"),
+  data = c("raw", "coregistered"))
 }
 \arguments{
 \item{id}{ID to download (either 01 or patient01 or 1)}

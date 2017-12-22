@@ -1,0 +1,33 @@
+---
+title: "Downloading MS Data"
+author: "Vignette Author"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Downloading MS Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = ""
+)
+```
+
+Here we will download a single subject from the cross-sectional data with MS using the `download_ms_patient` function:
+
+```{r}
+library(msdata)
+files = download_ms_patient(
+  id = 2, 
+  cohort = "cross_sectional",
+  data = "raw")
+```
+
+
+```{r}
+library(oro.nifti)
+fname = files[1]
+```

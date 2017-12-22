@@ -9,6 +9,8 @@
 #'
 #' @examples
 #' ms_data()
+#' ms_data(data = "coregistered")
+#' ms_data(cohort = "longitudinal", data = "coregistered")
 ms_data = function(
   cohort = c("cross_sectional", "longitudinal"),
   data = c("raw", "coregistered")) {

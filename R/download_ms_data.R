@@ -20,18 +20,10 @@ download_ms_patient = function(
   outdir = tempfile(),
   overwrite = FALSE) {
 
-  if (is.numeric(id)) {
-    id = sprintf("patient%02.0f", seq(id))
-  }
-
-  dat = ms_data(cohort = cohort,
-                data = data)
-  have_data = dat$id %in% id
-  if (!any(have_data)) {
-    stop("That ID is not in the cohort/data you requested")
-  }
-  dat = dat[ have_data, ]
-  urls = c(dat$url, dat$Brain_Mask, dat$Gold_Standard)
+  urls = ms_patient_urls(
+    id = id,
+    cohort = cohort,
+    data = data)
   if (!dir.exists(outdir)) {
     dir.create(outdir, showWarnings = FALSE, recursive = TRUE)
   }
@@ -57,4 +49,26 @@ download_ms_patient = function(
   }
   return(outfiles)
 
+}
+
+#' @rdname download_ms_patient
+#' @export
+ms_patient_urls = function(
+  id,
+  cohort = c("cross_sectional", "longitudinal"),
+  data = c("raw", "coregistered")) {
+
+  if (is.numeric(id) || is.integer(id)) {
+    id = sprintf("patient%02.0f", id)
+  }
+
+  dat = ms_data(cohort = cohort,
+                data = data)
+  have_data = dat$id %in% id
+  if (!any(have_data)) {
+    stop("That ID is not in the cohort/data you requested")
+  }
+  dat = dat[ have_data, ]
+  urls = c(dat$url, dat$Brain_Mask, dat$Gold_Standard)
+  return(urls)
 }
