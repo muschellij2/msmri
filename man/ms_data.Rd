@@ -21,5 +21,5 @@ MS Imaging Data in a \code{data.frame}
 \examples{
 ms_data()
 ms_data(data = "coregistered")
-ms_data(cohort = "longitudinal", data = "coregistered")
+df = ms_data(cohort = "longitudinal", data = "coregistered")
 }

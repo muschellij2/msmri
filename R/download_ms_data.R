@@ -11,6 +11,10 @@
 #'
 #' @examples \dontrun{
 #' res = download_ms_patient(id = "patient01")
+#' res = download_ms_patient(
+#' id = "patient01",
+#' data = "coregistered",
+#' cohort = "longitudinal")
 #' }
 #' @importFrom httr GET write_disk warn_for_status progress
 download_ms_patient = function(
@@ -69,6 +73,6 @@ ms_patient_urls = function(
     stop("That ID is not in the cohort/data you requested")
   }
   dat = dat[ have_data, ]
-  urls = c(dat$url, dat$Brain_Mask, dat$Gold_Standard)
+  urls = c(dat$url, unique(c(dat$Brain_Mask_url, dat$Gold_Standard_url)))
   return(urls)
 }

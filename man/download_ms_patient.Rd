@@ -31,5 +31,9 @@ Download MS Imaging Data
 \examples{
 \dontrun{
 res = download_ms_patient(id = "patient01")
+res = download_ms_patient(
+id = "patient01",
+data = "coregistered",
+cohort = "longitudinal")
 }
 }

@@ -10,7 +10,7 @@
 #' @examples
 #' ms_data()
 #' ms_data(data = "coregistered")
-#' ms_data(cohort = "longitudinal", data = "coregistered")
+#' df = ms_data(cohort = "longitudinal", data = "coregistered")
 ms_data = function(
   cohort = c("cross_sectional", "longitudinal"),
   data = c("raw", "coregistered")) {
@@ -30,10 +30,10 @@ ms_data = function(
   rda = paste0(cohort, "_", data)
   df = get(rda)
   df$url = file.path(ms_data_url(), df$file)
-  if (cohort == "longitudinal") {
-    df$Gold_Standard = file.path(ms_data_url(), df$Gold_Standard)
-    if (data == "coregistered") {
-      df$Brain_Mask = file.path(ms_data_url(), df$Brain_Mask)
+  if (cohort == "long") {
+    df$Gold_Standard_url = file.path(ms_data_url(), df$Gold_Standard)
+    if (data == "coreg") {
+      df$Brain_Mask_url = file.path(ms_data_url(), df$Brain_Mask)
     }
   }
   return(df)
