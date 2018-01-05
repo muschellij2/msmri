@@ -23,7 +23,7 @@
 #'
 #' @format A \code{data.frame} with 6 columns, which are:
 #' \describe{
-#' \item{patient_id}{patient identifier}
+#' \item{id}{patient identifier}
 #' \item{age}{age of patient}
 #' \item{sex}{sex of the patient}
 #' \item{ms_type}{type of MS diagnosis}
@@ -60,7 +60,7 @@
 #'
 #' @format A \code{data.frame} with 6 columns, which are:
 #' \describe{
-#' \item{patient_id}{patient identifier}
+#' \item{id}{patient identifier}
 #' \item{age}{age of patient, at first visit}
 #' \item{sex}{sex of the patient}
 #' \item{ms_type}{type of MS diagnosis}

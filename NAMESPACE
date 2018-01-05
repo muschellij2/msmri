@@ -3,6 +3,7 @@
 export(download_ms_patient)
 export(ms_data)
 export(ms_data_url)
+export(ms_demog)
 export(ms_ids)
 export(ms_patient_urls)
 importFrom(httr,GET)

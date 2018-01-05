@@ -13,7 +13,8 @@ ms_data(cohort = c("cross_sectional", "longitudinal"), data = c("raw",
 \item{data}{data to be used - raw or coregistered/processed}
 }
 \value{
-A \code{data.frame} of imaging modalities and masks
+A \code{data.frame} of imaging modalities and masks,
+and demographics
 }
 \description{
 MS Imaging Data in a \code{data.frame}
