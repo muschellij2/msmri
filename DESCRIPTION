@@ -1,4 +1,4 @@
-Package: msdata
+Package: msmri
 Version: 0.3.0
 Title: Open Multiple Sclerosis Magnetic Resonance Imaging Data
 Description: Structural magnetic resonance imaging ('MRI') of patients with multiple sclerosis ('MS').  Cross-sectional and longitudinal imaging data are available. 
@@ -22,6 +22,6 @@ ByteCompile: true
 Type: Package
 Maintainer: John Muschelli <muschellij2@gmail.com>
 VignetteBuilder: knitr
-URL: https://github.com/muschellij2/msdata
-BugReports: https://github.com/muschellij2/msdata/issues
+URL: https://github.com/muschellij2/msmri
+BugReports: https://github.com/muschellij2/msmri/issues
 RoxygenNote: 6.0.1
