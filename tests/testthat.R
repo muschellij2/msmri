@@ -1,4 +1,4 @@
 library(testthat)
-library(msdata)
+library(msmri)
 
-test_check("msdata")
+test_check("msmri")

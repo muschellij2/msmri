@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 Here we will download a single subject from the cross-sectional data with MS using the `download_ms_patient` function:
 
 ```{r}
-library(msdata)
+library(msmri)
 files = download_ms_patient(
   id = 2, 
   cohort = "cross_sectional",

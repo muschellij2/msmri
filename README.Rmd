@@ -2,9 +2,9 @@
   output: github_document
 ---
 
-[![Travis build status](https://travis-ci.org/muschellij2/msdata.svg?branch=master)](https://travis-ci.org/muschellij2/msdata)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/muschellij2/msdata?branch=master&svg=true)](https://ci.appveyor.com/project/muschellij2/msdata)
-[![Coverage status](https://coveralls.io/repos/github/muschellij2/msdata/badge.svg?branch=master)](https://coveralls.io/r/muschellij2/msdata?branch=master)
+[![Travis build status](https://travis-ci.org/muschellij2/msmri.svg?branch=master)](https://travis-ci.org/muschellij2/msmri)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/muschellij2/msmri?branch=master&svg=true)](https://ci.appveyor.com/project/muschellij2/msmri)
+[![Coverage status](https://coveralls.io/repos/github/muschellij2/msmri/badge.svg?branch=master)](https://coveralls.io/r/muschellij2/msmri?branch=master)
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r setup, include = FALSE}
@@ -14,14 +14,14 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-"
 )
 ```
-# msdata Package: 
-The goal of `msdata` is to provide structural magnetic resonance imaging ('MRI') of patients with multiple sclerosis ('MS').  Cross-sectional and longitudinal imaging data are available. 
+# msmri Package: 
+The goal of `msmri` is to provide structural magnetic resonance imaging ('MRI') of patients with multiple sclerosis ('MS').  Cross-sectional and longitudinal imaging data are available. 
 
 ## Installation
 
-You can install `msdata` from GitHub with:
+You can install `msmri` from GitHub with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("remotes")
-remotes::install_github("muschellij2/msdata")
+remotes::install_github("muschellij2/msmri")
 ```
